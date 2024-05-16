@@ -9,3 +9,5 @@ import "./framework.js";
 import "./app.js";
 import "./script.js";
 import "./three.js";
+import "./loading.js";
+import "./components/BaseComponent.js";

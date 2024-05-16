@@ -71,7 +71,7 @@ module.exports = (env, argv) => {
             },
           ],
           generator: {
-            filename: "assets/[name].[hash][ext]",
+            filename: "img/[name].[hash][ext]",
           },
         },
         {
@@ -195,6 +195,12 @@ module.exports = (env, argv) => {
     },
     performance: {
       hints: false,
+    },
+    devServer: {
+      static: path.resolve(__dirname, "dist"),
+      open: true,
+      hot: true,
+      port: 9000,
     },
   };
 };
