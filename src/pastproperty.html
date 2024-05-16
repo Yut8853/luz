@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Luz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="Luz description" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas></canvas>
+    <!-- PAGE PRELOADER -->
+    <div
+      class="preloader section-fullheight bg-dark-4 text-center"
+      id="js-preloader"
+      data-arts-color-theme="dark"
+      data-arts-component-name="Preloader"
+      data-arts-os-animation="true"
+    >
+      <div class="preloader__wrapper js-preloader__wrapper">
+        <!-- Fast-sliding images -->
+        <div
+          class="preloader__wrapper-images-outer opacity-75 js-preloader__wrapper-images-outer"
+        >
+          <div
+            class="preloader__wrapper-images-inner js-preloader__wrapper-images-inner"
+          ></div>
+        </div>
+        <!-- - Fast-sliding images -->
+        <!-- Heading -->
+        <div
+          class="preloader__heading js-preloader__heading"
+          data-arts-split-text-preset="animatedChars"
+        >
+          <div class="display-xl color-accent">Luz</div>
+        </div>
+        <!-- - Heading -->
+        <!-- Bottom content -->
+        <div
+          class="preloader__footer p-gutters"
+          data-arts-split-text-preset="animatedLines"
+        >
+          <!-- Content [before load] -->
+          <div class="preloader__loading js-preloader__content-loading">
+            <div class="h6">Loading...</div>
+          </div>
+          <!-- - Content [before load] -->
+        </div>
+        <!-- - Bottom content -->
+      </div>
+    </div>
+    <!-- - PAGE PRELOADER -->
+    <div data-barba="wrapper">
+      <!-- PAGE HEADER -->
+      <header
+        class="header header_overlay-logo-center-burger-right js-header"
+        id="page-header"
+        data-arts-component-name="Header"
+      >
+        <!-- Top bar -->
+        <div
+          class="header__bar header__bar_fixed borders-auto-opacity-solid d-flex justify-content-between js-header__bar"
+          data-arts-color-theme="light"
+          data-arts-header-logo="primary"
+          data-arts-header-sticky-logo="primary"
+          data-arts-header-sticky-class="bg-light-4"
+        >
+          <!-- Burger button -->
+          <a
+            class="header__col header__col_right header__burger js-header__overlay-switcher"
+            href="#"
+            rel="nofollow"
+            data-arts-cursor-follower-target="{delegate: true, magnetic: 0.1, scale: 1.2, hideNative: false}"
+          >
+            <!-- Burger lines -->
+            <div
+              class="header__burger-wrapper-lines"
+              data-arts-cursor-follower-delegated="true"
+            >
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </div>
+            <!-- - Burger lines -->
+            <!-- Border left -->
+            <div
+              class="header__border-vertical bg-bl js-header__border-vertical"
+            ></div>
+          </a>
+          <!-- - Burger button -->
+          <!-- Bar border bottom-->
+          <div
+            class="header__border-horizontal bg-bb js-header__border-horizontal"
+          ></div>
+        </div>
+        <!-- - Top bar -->
+        <!-- Overlay menu -->
+        <div
+          class="header__wrapper-overlay-menu js-header__overlay-container bg-light-4"
+          data-arts-color-theme="light"
+        >
+          <div class="header__overlay-inner js-header__overlay-container-inner">
+            <!-- Site menu -->
+            <div class="col-lg-8 col-12 text-end header__col-overlay">
+              <ul
+                class="menu-overlay"
+                data-arts-component-name="MenuOverlay"
+                data-arts-component-options="{}"
+              >
+                <li class="menu-item-has-children current-menu-ancestor">
+                  <a
+                    class="overlay-menu-item"
+                    href="./index.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Top Page</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">01</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./news.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">News</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">02</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./pastproperty.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Past Property</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">03</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./about.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">About Us</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">04</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./contact.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Contact</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">05</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- - Site menu -->
+            <!-- Widgets -->
+            <div class="col-lg-4 col-12 text-start header__col-widgets">
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">E-mail</div>
+                <div class="header__widget-content h6">
+                  <a href="mailto:asli@example.com">info@luz-real.com</a>
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">Phones</div>
+                <div class="header__widget-content h6">
+                  Tel:03-6432-5307<br />Fax:03-6432-5308
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">Address</div>
+                <div class="header__widget-content h6">
+                  Grand M Ebisu<br />
+                  4-19-17 Ebisu,<br />
+                  Shibuya-ku, Tokyo-to 150-0013<br />
+                  Japan
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+            </div>
+            <!-- - Widgets -->
+          </div>
+        </div>
+        <!-- - Overlay menu -->
+      </header>
+      <!-- - PAGE HEADER -->
+
+      <!-- PAGE MAIN CONTAINER -->
+      <main
+        class="page-wrapper bg-dark-4"
+        id="page-wrapper"
+        data-barba="container"
+        data-arts-color-theme="dark"
+      >
+        <div class="page-wrapper__content" id="page-wrapper__content">
+          <!-- PAGE CONTENT -->
+          <!-- Fullpage Backgrounds [Click & hold / WebGL]-->
+          <section class="section section-fullheight">
+            <div
+              class="section-fullheight__inner section-fullheight__inner_mobile"
+            >
+              <div
+                class="slider-fullpage-backgrounds js-slider-fullpage has-curtains"
+                data-arts-component-name="SliderFullpageBackgroundsMask"
+                data-arts-component-options="{preventScroll: true, autoplay: 6, textTransitionDirection: 'vertical', webGL: {enabled: true, transitionEffect: 3, onHoverIn: {amplitude: 2}, onHoverOut: {amplitude: 1}}, scaleInner: 1.1, scaleOuter: 1.0}"
+                data-arts-os-animation="true"
+                data-ajax-transition="flyingImage"
+              >
+                <div class="canvas-wrapper"></div>
+                <!-- Slide #1 -->
+                <div
+                  class="slider-fullpage-backgrounds__section js-slider-fullpage__section js-click-and-hold"
+                  data-arts-component-name="ClickAndHold"
+                  data-arts-component-options="{duration: 1.8}"
+                  data-post-id="1"
+                >
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-content h-100 text-center"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__container pt-header-height"
+                    >
+                      <!-- Text content -->
+                      <div class="slider-fullpage-backgrounds__header">
+                        <a
+                          class="d-inline-block slider-fullpage-backgrounds__wrapper-heading js-slider-fullpage__wrapper-heading"
+                          data-arts-split-text-preset="sliderChars"
+                          href="./shibuya.html"
+                          data-arts-cursor-follower-target="{hideNative: true, scale: '130px', label: 'Click & Hold', color: '#000', background: 'var(--color-accent-dark-theme)'}"
+                        >
+                          <h2 class="h1 color-accent my-0">Shibuya</h2></a
+                        >
+                      </div>
+                      <!-- - Text content -->
+                      <div class="w-100"></div>
+                      <!-- Button -->
+                      <div
+                        class="slider-fullpage-backgrounds__wrapper-button mt-xxsmall js-slider-fullpage__wrapper-button"
+                      >
+                        <a
+                          class="button-circle button-progress ui-element"
+                          href="./shibuya.html"
+                          data-arts-cursor-follower-target="{color: 'transparent', magnetic: 0.25, scale: 'current'}"
+                          ><span class="button-progress__normal"
+                            >Click & Hold</span
+                          ><span class="button-progress__hold">Hold...</span>
+                          <svg class="svg-circle" viewBox="0 0 60 60">
+                            <circle
+                              class="circle"
+                              cx="30"
+                              cy="30"
+                              r="29"
+                              fill="none"
+                            ></circle></svg
+                        ></a>
+                      </div>
+                      <!-- - Button -->
+                    </div>
+                  </div>
+                  <!-- Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-background js-slider-fullpage__mask-outer js-ajax-transition-element"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__wrapper-background-mask js-slider-fullpage__mask-inner js-ajax-transition-element__mask"
+                    >
+                      <img
+                        class="js-ajax-transition-element__media"
+                        src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        data-texture-src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        width="1920"
+                        height="1280"
+                        crossorigin=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- - Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__overlay overlay overlay_opacity-50 js-slider-fullpage__overlay"
+                  ></div>
+                </div>
+                <!-- Slide #2 -->
+                <div
+                  class="slider-fullpage-backgrounds__section js-slider-fullpage__section js-click-and-hold"
+                  data-arts-component-name="ClickAndHold"
+                  data-arts-component-options="{duration: 1.8}"
+                  data-post-id="2"
+                >
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-content h-100 text-center"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__container pt-header-height"
+                    >
+                      <!-- Text content -->
+                      <div class="slider-fullpage-backgrounds__header">
+                        <a
+                          class="d-inline-block slider-fullpage-backgrounds__wrapper-heading js-slider-fullpage__wrapper-heading"
+                          data-arts-split-text-preset="sliderChars"
+                          href="./meguro.html"
+                          data-arts-cursor-follower-target="{hideNative: true, scale: '130px', label: 'Click & Hold', color: '#000', background: 'var(--color-accent-dark-theme)'}"
+                        >
+                          <h2 class="h1 color-accent my-0">Meguro</h2></a
+                        >
+                      </div>
+                      <!-- - Text content -->
+                      <!-- - Text content -->
+                      <div class="w-100"></div>
+                      <!-- Button -->
+                      <div
+                        class="slider-fullpage-backgrounds__wrapper-button mt-xxsmall js-slider-fullpage__wrapper-button"
+                      >
+                        <a
+                          class="button-circle button-progress ui-element"
+                          href="./meguro.html"
+                          data-arts-cursor-follower-target="{color: 'transparent', magnetic: 0.25, scale: 'current'}"
+                          ><span class="button-progress__normal"
+                            >Click & Hold</span
+                          ><span class="button-progress__hold">Hold...</span>
+                          <svg class="svg-circle" viewBox="0 0 60 60">
+                            <circle
+                              class="circle"
+                              cx="30"
+                              cy="30"
+                              r="29"
+                              fill="none"
+                            ></circle></svg
+                        ></a>
+                      </div>
+                      <!-- - Button -->
+                    </div>
+                  </div>
+                  <!-- Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-background js-slider-fullpage__mask-outer js-ajax-transition-element"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__wrapper-background-mask js-slider-fullpage__mask-inner js-ajax-transition-element__mask"
+                    >
+                      <img
+                        class="js-ajax-transition-element__media"
+                        src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        data-texture-src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        width="1920"
+                        height="1280"
+                        crossorigin=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- - Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__overlay overlay overlay_opacity-50 js-slider-fullpage__overlay"
+                  ></div>
+                </div>
+                <!-- Slide #3 -->
+                <div
+                  class="slider-fullpage-backgrounds__section js-slider-fullpage__section js-click-and-hold"
+                  data-arts-component-name="ClickAndHold"
+                  data-arts-component-options="{duration: 1.8}"
+                  data-post-id="3"
+                >
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-content h-100 text-center"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__container pt-header-height"
+                    >
+                      <!-- Text content -->
+                      <div class="slider-fullpage-backgrounds__header">
+                        <a
+                          class="d-inline-block slider-fullpage-backgrounds__wrapper-heading js-slider-fullpage__wrapper-heading"
+                          data-arts-split-text-preset="sliderChars"
+                          href="./minato.html"
+                          data-arts-cursor-follower-target="{hideNative: true, scale: '130px', label: 'Click & Hold', color: '#000', background: 'var(--color-accent-dark-theme)'}"
+                        >
+                          <h2 class="h1 color-accent my-0">Minato</h2></a
+                        >
+                      </div>
+                      <!-- - Text content -->
+                      <!-- - Text content -->
+                      <div class="w-100"></div>
+                      <!-- Button -->
+                      <div
+                        class="slider-fullpage-backgrounds__wrapper-button mt-xxsmall js-slider-fullpage__wrapper-button"
+                      >
+                        <a
+                          class="button-circle button-progress ui-element"
+                          href="./minato.html"
+                          data-arts-cursor-follower-target="{color: 'transparent', magnetic: 0.25, scale: 'current'}"
+                          ><span class="button-progress__normal"
+                            >Click & Hold</span
+                          ><span class="button-progress__hold">Hold...</span>
+                          <svg class="svg-circle" viewBox="0 0 60 60">
+                            <circle
+                              class="circle"
+                              cx="30"
+                              cy="30"
+                              r="29"
+                              fill="none"
+                            ></circle></svg
+                        ></a>
+                      </div>
+                      <!-- - Button -->
+                    </div>
+                  </div>
+                  <!-- Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-background js-slider-fullpage__mask-outer js-ajax-transition-element"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__wrapper-background-mask js-slider-fullpage__mask-inner js-ajax-transition-element__mask"
+                    >
+                      ><img
+                        class="js-ajax-transition-element__media"
+                        src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        data-texture-src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        width="1920"
+                        height="1280"
+                        crossorigin=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- - Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__overlay overlay overlay_opacity-50 js-slider-fullpage__overlay"
+                  ></div>
+                </div>
+                <!-- Slide #4 -->
+                <div
+                  class="slider-fullpage-backgrounds__section js-slider-fullpage__section js-click-and-hold"
+                  data-arts-component-name="ClickAndHold"
+                  data-arts-component-options="{duration: 1.8}"
+                  data-post-id="4"
+                >
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-content h-100 text-center"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__container pt-header-height"
+                    >
+                      <!-- Text content -->
+                      <div class="slider-fullpage-backgrounds__header">
+                        <a
+                          class="d-inline-block slider-fullpage-backgrounds__wrapper-heading js-slider-fullpage__wrapper-heading"
+                          data-arts-split-text-preset="sliderChars"
+                          href="./setagaya.html"
+                          data-arts-cursor-follower-target="{hideNative: true, scale: '130px', label: 'Click & Hold', color: '#000', background: 'var(--color-accent-dark-theme)'}"
+                        >
+                          <h2 class="h1 color-accent my-0">Setagaya</h2></a
+                        >
+                      </div>
+                      <!-- - Text content -->
+                      <!-- - Text content -->
+                      <div class="w-100"></div>
+                      <!-- Button -->
+                      <div
+                        class="slider-fullpage-backgrounds__wrapper-button mt-xxsmall js-slider-fullpage__wrapper-button"
+                      >
+                        <a
+                          class="button-circle button-progress ui-element"
+                          href="./setagaya.html"
+                          data-arts-cursor-follower-target="{color: 'transparent', magnetic: 0.25, scale: 'current'}"
+                          ><span class="button-progress__normal"
+                            >Click & Hold</span
+                          ><span class="button-progress__hold">Hold...</span>
+                          <svg class="svg-circle" viewBox="0 0 60 60">
+                            <circle
+                              class="circle"
+                              cx="30"
+                              cy="30"
+                              r="29"
+                              fill="none"
+                            ></circle></svg
+                        ></a>
+                      </div>
+                      <!-- - Button -->
+                    </div>
+                  </div>
+                  <!-- Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-background js-slider-fullpage__mask-outer js-ajax-transition-element"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__wrapper-background-mask js-slider-fullpage__mask-inner js-ajax-transition-element__mask"
+                    >
+                      <img
+                        class="js-ajax-transition-element__media"
+                        src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        data-texture-src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        width="1920"
+                        height="1280"
+                        crossorigin=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- - Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__overlay overlay overlay_opacity-50 js-slider-fullpage__overlay"
+                  ></div>
+                </div>
+                <!-- Slide #5 -->
+                <div
+                  class="slider-fullpage-backgrounds__section js-slider-fullpage__section js-click-and-hold"
+                  data-arts-component-name="ClickAndHold"
+                  data-arts-component-options="{duration: 1.8}"
+                  data-post-id="5"
+                >
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-content h-100 text-center"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__container pt-header-height"
+                    >
+                      <!-- Text content -->
+                      <div class="slider-fullpage-backgrounds__header">
+                        <a
+                          class="d-inline-block slider-fullpage-backgrounds__wrapper-heading js-slider-fullpage__wrapper-heading"
+                          data-arts-split-text-preset="sliderChars"
+                          href="./shinagawa.html"
+                          data-arts-cursor-follower-target="{hideNative: true, scale: '130px', label: 'Click & Hold', color: '#000', background: 'var(--color-accent-dark-theme)'}"
+                        >
+                          <h2 class="h1 color-accent my-0">Shinagawa</h2></a
+                        >
+                      </div>
+                      <!-- - Text content -->
+                      <!-- - Text content -->
+                      <div class="w-100"></div>
+                      <!-- Button -->
+                      <div
+                        class="slider-fullpage-backgrounds__wrapper-button mt-xxsmall js-slider-fullpage__wrapper-button"
+                      >
+                        <a
+                          class="button-circle button-progress ui-element"
+                          href="./shinagawa.html"
+                          data-arts-cursor-follower-target="{color: 'transparent', magnetic: 0.25, scale: 'current'}"
+                          ><span class="button-progress__normal"
+                            >Click & Hold</span
+                          ><span class="button-progress__hold">Hold...</span>
+                          <svg class="svg-circle" viewBox="0 0 60 60">
+                            <circle
+                              class="circle"
+                              cx="30"
+                              cy="30"
+                              r="29"
+                              fill="none"
+                            ></circle></svg
+                        ></a>
+                      </div>
+                      <!-- - Button -->
+                    </div>
+                  </div>
+                  <!-- Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-background js-slider-fullpage__mask-outer js-ajax-transition-element"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__wrapper-background-mask js-slider-fullpage__mask-inner js-ajax-transition-element__mask"
+                    >
+                      <img
+                        class="js-ajax-transition-element__media"
+                        src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        data-texture-src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        width="1920"
+                        height="1280"
+                        crossorigin=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- - Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__overlay overlay overlay_opacity-50 js-slider-fullpage__overlay"
+                  ></div>
+                </div>
+                <!-- Slide #6 -->
+                <div
+                  class="slider-fullpage-backgrounds__section js-slider-fullpage__section js-click-and-hold"
+                  data-arts-component-name="ClickAndHold"
+                  data-arts-component-options="{duration: 1.8}"
+                  data-post-id="6"
+                >
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-content h-100 text-center"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__container pt-header-height"
+                    >
+                      <!-- Text content -->
+                      <div class="slider-fullpage-backgrounds__header">
+                        <a
+                          class="d-inline-block slider-fullpage-backgrounds__wrapper-heading js-slider-fullpage__wrapper-heading"
+                          data-arts-split-text-preset="sliderChars"
+                          href="./ota.html"
+                          data-arts-cursor-follower-target="{hideNative: true, scale: '130px', label: 'Click & Hold', color: '#000', background: 'var(--color-accent-dark-theme)'}"
+                        >
+                          <h2 class="h1 color-accent my-0">Ota</h2></a
+                        >
+                      </div>
+                      <!-- - Text content -->
+                      <!-- - Text content -->
+                      <div class="w-100"></div>
+                      <!-- Button -->
+                      <div
+                        class="slider-fullpage-backgrounds__wrapper-button mt-xxsmall js-slider-fullpage__wrapper-button"
+                      >
+                        <a
+                          class="button-circle button-progress ui-element"
+                          href="./ota.html"
+                          data-arts-cursor-follower-target="{color: 'transparent', magnetic: 0.25, scale: 'current'}"
+                          ><span class="button-progress__normal"
+                            >Click & Hold</span
+                          ><span class="button-progress__hold">Hold...</span>
+                          <svg class="svg-circle" viewBox="0 0 60 60">
+                            <circle
+                              class="circle"
+                              cx="30"
+                              cy="30"
+                              r="29"
+                              fill="none"
+                            ></circle></svg
+                        ></a>
+                      </div>
+                      <!-- - Button -->
+                    </div>
+                  </div>
+                  <!-- Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-background js-slider-fullpage__mask-outer js-ajax-transition-element"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__wrapper-background-mask js-slider-fullpage__mask-inner js-ajax-transition-element__mask"
+                    >
+                      <img
+                        class="js-ajax-transition-element__media"
+                        src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        data-texture-src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        width="1920"
+                        height="1280"
+                        crossorigin=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- - Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__overlay overlay overlay_opacity-50 js-slider-fullpage__overlay"
+                  ></div>
+                </div>
+                <!-- Slide #7 -->
+                <div
+                  class="slider-fullpage-backgrounds__section js-slider-fullpage__section js-click-and-hold"
+                  data-arts-component-name="ClickAndHold"
+                  data-arts-component-options="{duration: 1.8}"
+                  data-post-id="7"
+                >
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-content h-100 text-center"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__container pt-header-height"
+                    >
+                      <!-- Text content -->
+                      <div class="slider-fullpage-backgrounds__header">
+                        <a
+                          class="d-inline-block slider-fullpage-backgrounds__wrapper-heading js-slider-fullpage__wrapper-heading"
+                          data-arts-split-text-preset="sliderChars"
+                          href="./shinjuku.html"
+                          data-arts-cursor-follower-target="{hideNative: true, scale: '130px', label: 'Click & Hold', color: '#000', background: 'var(--color-accent-dark-theme)'}"
+                        >
+                          <h2 class="h1 color-accent my-0">Shinjuku</h2></a
+                        >
+                      </div>
+                      <!-- - Text content -->
+                      <!-- - Text content -->
+                      <div class="w-100"></div>
+                      <!-- Button -->
+                      <div
+                        class="slider-fullpage-backgrounds__wrapper-button mt-xxsmall js-slider-fullpage__wrapper-button"
+                      >
+                        <a
+                          class="button-circle button-progress ui-element"
+                          href="./shinjuku.html"
+                          data-arts-cursor-follower-target="{color: 'transparent', magnetic: 0.25, scale: 'current'}"
+                          ><span class="button-progress__normal"
+                            >Click & Hold</span
+                          ><span class="button-progress__hold">Hold...</span>
+                          <svg class="svg-circle" viewBox="0 0 60 60">
+                            <circle
+                              class="circle"
+                              cx="30"
+                              cy="30"
+                              r="29"
+                              fill="none"
+                            ></circle></svg
+                        ></a>
+                      </div>
+                      <!-- - Button -->
+                    </div>
+                  </div>
+                  <!-- Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__wrapper-background js-slider-fullpage__mask-outer js-ajax-transition-element"
+                  >
+                    <div
+                      class="slider-fullpage-backgrounds__wrapper-background-mask js-slider-fullpage__mask-inner js-ajax-transition-element__mask"
+                    >
+                      <img
+                        class="js-ajax-transition-element__media"
+                        src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        data-texture-src="img/assets/postsPortfolio/project08/08-cover-1-landscape.jpg"
+                        width="1920"
+                        height="1280"
+                        crossorigin=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- - Background image -->
+                  <div
+                    class="slider-fullpage-backgrounds__overlay overlay overlay_opacity-50 js-slider-fullpage__overlay"
+                  ></div>
+                </div>
+                <!-- Dots -->
+                <div class="slider-dots slider-dots_right slider-dots_vertical">
+                  <div
+                    class="slider-dots__item"
+                    data-arts-fullpage-slider-indicator="0"
+                    data-arts-cursor-follower-target="{delegate: true, scale: 'current', magnetic: 0.15, color: '#777'}"
+                  >
+                    <div
+                      class="slider-dots__dot"
+                      data-arts-cursor-follower-delegated="true"
+                    >
+                      <svg class="svg-circle" viewBox="0 0 60 60">
+                        <circle
+                          class="circle"
+                          cx="30"
+                          cy="30"
+                          r="29"
+                          fill="none"
+                        ></circle>
+                      </svg>
+                    </div>
+                    <span class="slider-dots__label ui-element">Shibuya</span>
+                  </div>
+                  <div
+                    class="slider-dots__item"
+                    data-arts-fullpage-slider-indicator="1"
+                    data-arts-cursor-follower-target="{delegate: true, scale: 'current', magnetic: 0.15, color: '#777'}"
+                  >
+                    <div
+                      class="slider-dots__dot"
+                      data-arts-cursor-follower-delegated="true"
+                    >
+                      <svg class="svg-circle" viewBox="0 0 60 60">
+                        <circle
+                          class="circle"
+                          cx="30"
+                          cy="30"
+                          r="29"
+                          fill="none"
+                        ></circle>
+                      </svg>
+                    </div>
+                    <span class="slider-dots__label ui-element">Meguro</span>
+                  </div>
+                  <div
+                    class="slider-dots__item"
+                    data-arts-fullpage-slider-indicator="2"
+                    data-arts-cursor-follower-target="{delegate: true, scale: 'current', magnetic: 0.15, color: '#777'}"
+                  >
+                    <div
+                      class="slider-dots__dot"
+                      data-arts-cursor-follower-delegated="true"
+                    >
+                      <svg class="svg-circle" viewBox="0 0 60 60">
+                        <circle
+                          class="circle"
+                          cx="30"
+                          cy="30"
+                          r="29"
+                          fill="none"
+                        ></circle>
+                      </svg>
+                    </div>
+                    <span class="slider-dots__label ui-element">Minato</span>
+                  </div>
+                  <div
+                    class="slider-dots__item"
+                    data-arts-fullpage-slider-indicator="3"
+                    data-arts-cursor-follower-target="{delegate: true, scale: 'current', magnetic: 0.15, color: '#777'}"
+                  >
+                    <div
+                      class="slider-dots__dot"
+                      data-arts-cursor-follower-delegated="true"
+                    >
+                      <svg class="svg-circle" viewBox="0 0 60 60">
+                        <circle
+                          class="circle"
+                          cx="30"
+                          cy="30"
+                          r="29"
+                          fill="none"
+                        ></circle>
+                      </svg>
+                    </div>
+                    <span class="slider-dots__label ui-element">Setagaya</span>
+                  </div>
+                  <div
+                    class="slider-dots__item"
+                    data-arts-fullpage-slider-indicator="4"
+                    data-arts-cursor-follower-target="{delegate: true, scale: 'current', magnetic: 0.15, color: '#777'}"
+                  >
+                    <div
+                      class="slider-dots__dot"
+                      data-arts-cursor-follower-delegated="true"
+                    >
+                      <svg class="svg-circle" viewBox="0 0 60 60">
+                        <circle
+                          class="circle"
+                          cx="30"
+                          cy="30"
+                          r="29"
+                          fill="none"
+                        ></circle>
+                      </svg>
+                    </div>
+                    <span class="slider-dots__label ui-element">Shinagawa</span>
+                  </div>
+                  <div
+                    class="slider-dots__item"
+                    data-arts-fullpage-slider-indicator="5"
+                    data-arts-cursor-follower-target="{delegate: true, scale: 'current', magnetic: 0.15, color: '#777'}"
+                  >
+                    <div
+                      class="slider-dots__dot"
+                      data-arts-cursor-follower-delegated="true"
+                    >
+                      <svg class="svg-circle" viewBox="0 0 60 60">
+                        <circle
+                          class="circle"
+                          cx="30"
+                          cy="30"
+                          r="29"
+                          fill="none"
+                        ></circle>
+                      </svg>
+                    </div>
+                    <span class="slider-dots__label ui-element">Ota</span>
+                  </div>
+                  <div
+                    class="slider-dots__item"
+                    data-arts-fullpage-slider-indicator="6"
+                    data-arts-cursor-follower-target="{delegate: true, scale: 'current', magnetic: 0.15, color: '#777'}"
+                  >
+                    <div
+                      class="slider-dots__dot"
+                      data-arts-cursor-follower-delegated="true"
+                    >
+                      <svg class="svg-circle" viewBox="0 0 60 60">
+                        <circle
+                          class="circle"
+                          cx="30"
+                          cy="30"
+                          r="29"
+                          fill="none"
+                        ></circle>
+                      </svg>
+                    </div>
+                    <span class="slider-dots__label ui-element">Shinjuku</span>
+                  </div>
+                </div>
+                <!-- - Dots -->
+              </div>
+            </div>
+          </section>
+          <!-- - Fullpage Backgrounds [Click & hold / WebGL]-->
+          <!-- - PAGE CONTENT -->
+          <!-- PAGE FOOTER -->
+          <!-- - PAGE FOOTER -->
+        </div>
+      </main>
+      <!-- - PAGE MAIN CONTAINER -->
+      <!-- Cursor Follower -->
+      <div class="arts-cursor" data-arts-cursor-follower="cursor">
+        <div
+          class="arts-cursor__wrapper"
+          data-arts-cursor-follower-element="wrapper"
+        >
+          <!-- follower element-->
+          <div
+            class="arts-cursor__follower"
+            data-arts-cursor-follower-element="follower"
+          ></div>
+          <!-- label holder-->
+          <div class="arts-cursor__wrapper-label">
+            <div
+              class="arts-cursor__label"
+              data-arts-cursor-follower-element="toggleLabel"
+            ></div>
+          </div>
+          <!-- icon holder-->
+          <div class="arts-cursor__wrapper-icon">
+            <div
+              class="arts-cursor__icon"
+              data-arts-cursor-follower-element="toggleClass"
+            ></div>
+          </div>
+          <!-- loading indicator -->
+          <div
+            class="arts-cursor__wrapper-loading"
+            data-arts-cursor-follower-element="loading"
+          >
+            <svg viewBox="25 25 50 50">
+              <circle cx="50" cy="50" r="24" fill="none"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- - Cursor Follower -->
+      <!-- Mobile Loading Spinner -->
+      <svg class="spinner" id="loading-indicator" viewBox="25 25 50 50">
+        <circle cx="50" cy="50" r="24" fill="none"></circle>
+      </svg>
+      <!-- - Mobile Loading Spinner -->
+      <div class="blocking-curtain" id="page-blocking-curtain"></div>
+      <!-- Curtain shape holder-->
+      <svg
+        class="curtain-svg"
+        width="1px"
+        height="1px"
+        viewBox="0 0 1 1"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <clippath id="curtain-clip" clipPathUnits="objectBoundingBox">
+            <path
+              id="curtain-clip__path"
+              d="M0,0 C0.167,0,0.333,0,0.5,0 C0.667,0,0.833,0,1,0 L1,1 L0,1 L0,0"
+            ></path>
+          </clippath>
+        </defs>
+      </svg>
+      <!-- - Curtain shape holder-->
+    </div>
+  </body>
+</html>

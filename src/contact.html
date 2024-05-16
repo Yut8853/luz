@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Luz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="Luz description" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas></canvas>
+    <!-- PAGE PRELOADER -->
+    <div
+      class="preloader section-fullheight text-center"
+      id="js-preloader"
+      data-arts-color-theme="dark"
+      data-arts-component-name="Preloader"
+      data-arts-os-animation="true"
+    >
+      <div class="preloader__wrapper js-preloader__wrapper">
+        <!-- Fast-sliding images -->
+        <div
+          class="preloader__wrapper-images-outer opacity-75 js-preloader__wrapper-images-outer"
+        >
+          <div
+            class="preloader__wrapper-images-inner js-preloader__wrapper-images-inner"
+          ></div>
+        </div>
+        <!-- - Fast-sliding images -->
+        <!-- Heading -->
+        <div
+          class="preloader__heading js-preloader__heading"
+          data-arts-split-text-preset="animatedChars"
+        >
+          <div class="display-xl color-accent">Luz</div>
+        </div>
+        <!-- - Heading -->
+        <!-- Bottom content -->
+        <div
+          class="preloader__footer p-gutters"
+          data-arts-split-text-preset="animatedLines"
+        >
+          <!-- Content [before load] -->
+          <div class="preloader__loading js-preloader__content-loading">
+            <div class="h6">Loading...</div>
+          </div>
+          <!-- - Content [before load] -->
+        </div>
+        <!-- - Bottom content -->
+      </div>
+    </div>
+    <!-- - PAGE PRELOADER -->
+    <div data-barba="wrapper">
+      <!-- PAGE HEADER -->
+      <header
+        class="header header_overlay-logo-center-burger-right js-header"
+        id="page-header"
+        data-arts-component-name="Header"
+      >
+        <!-- Top bar -->
+        <div
+          class="header__bar header__bar_fixed borders-auto-opacity-solid d-flex justify-content-between js-header__bar"
+          data-arts-color-theme="light"
+          data-arts-header-logo="primary"
+          data-arts-header-sticky-logo="primary"
+          data-arts-header-sticky-class="bg-light-4"
+        >
+          <!-- Burger button --><a
+            class="header__col header__col_right header__burger js-header__overlay-switcher"
+            href="#"
+            rel="nofollow"
+            data-arts-cursor-follower-target="{delegate: true, magnetic: 0.1, scale: 1.2, hideNative: false}"
+          >
+            <!-- Burger lines -->
+            <div
+              class="header__burger-wrapper-lines"
+              data-arts-cursor-follower-delegated="true"
+            >
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </div>
+            <!-- - Burger lines -->
+            <!-- Border left -->
+            <div
+              class="header__border-vertical bg-bl js-header__border-vertical"
+            ></div
+          ></a>
+          <!-- - Burger button -->
+          <!-- Bar border bottom-->
+          <div
+            class="header__border-horizontal bg-bb js-header__border-horizontal"
+          ></div>
+        </div>
+        <!-- - Top bar -->
+        <!-- Overlay menu -->
+        <div
+          class="header__wrapper-overlay-menu js-header__overlay-container bg-light-4"
+          data-arts-color-theme="light"
+        >
+          <div class="header__overlay-inner js-header__overlay-container-inner">
+            <!-- Site menu -->
+            <div class="col-lg-8 col-12 text-end header__col-overlay">
+              <ul
+                class="menu-overlay"
+                data-arts-component-name="MenuOverlay"
+                data-arts-component-options="{}"
+              >
+                <li class="menu-item-has-children current-menu-ancestor">
+                  <a
+                    class="overlay-menu-item"
+                    href="./index.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Top Page</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">01</span>
+                    </div></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./news.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">News</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">02</span>
+                    </div></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./pastproperty.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Past Property</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">03</span>
+                    </div></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./about.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">About Us</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">04</span>
+                    </div></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./contact.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Contact</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">05</span>
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- - Site menu -->
+            <!-- Widgets -->
+            <div class="col-lg-4 col-12 text-start header__col-widgets">
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">E-mail</div>
+                <div class="header__widget-content h6">
+                  <a href="mailto:asli@example.com">info@luz-real.com</a>
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">Phones</div>
+                <div class="header__widget-content h6">
+                  Tel:03-6432-5307<br />Fax:03-6432-5308
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">Address</div>
+                <div class="header__widget-content h6">
+                  Grand M Ebisu<br />
+                  4-19-17 Ebisu,<br />
+                  Shibuya-ku, Tokyo-to 150-0013<br />
+                  Japan
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+            </div>
+            <!-- - Widgets -->
+          </div>
+        </div>
+        <!-- - Overlay menu -->
+      </header>
+      <!-- - PAGE HEADER -->
+      <!-- PAGE MAIN CONTAINER -->
+      <main
+        class="page-wrapper"
+        id="page-wrapper"
+        data-barba="container"
+        data-arts-color-theme="dark"
+      >
+        <div class="page-wrapper__content" id="page-wrapper__content">
+          <!-- PAGE CONTENT -->
+          <!-- section CONTACT FORM [fullscreen] -->
+          <section
+            class="section section-form section-fullheight"
+            data-arts-component-name="Content"
+            data-arts-os-animation="true"
+          >
+            <div class="section-fullheight__inner pt-header-height">
+              <div
+                class="container max-sm-px-0 max-sm-py-0 py-small"
+                data-arts-os-animation-name="animatedJump"
+              >
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-8">
+                    <form
+                      class="form js-form-ajax bg-dark-3 py-small px-gutters text-center"
+                      action="mail.php"
+                      method="POST"
+                      novalidate="novalidate"
+                      data-arts-component-name="FormAJAX"
+                      data-message-success="Thanks for your message! We will reply you as soon as possible."
+                      data-message-error="Something went wrong :( Please contact me directly at &lt;a href='mailto:asli@example.com'&gt;asli@example.com&lt;/a&gt;"
+                      data-arts-color-theme="dark"
+                    >
+                      <!-- header -->
+                      <div class="row form__row">
+                        <div class="col form__col">
+                          <h2 class="h4 mt-0 color-accent">Send Message</h2>
+                        </div>
+                      </div>
+                      <!-- - header -->
+                      <div class="row form__row">
+                        <!-- input #1 -->
+                        <div class="col-12 col-lg-6 form__col">
+                          <label class="input-float">
+                            <input
+                              class="input-float__input"
+                              type="text"
+                              name="visitor_name"
+                              required="required"
+                              data-pristine-required-message="Please enter your name"
+                            /><span class="input-float__label">Your Name</span>
+                          </label>
+                        </div>
+                        <!-- - input #1 -->
+                        <!-- input #2 -->
+                        <div class="col-12 col-lg-6 form__col">
+                          <label class="input-float">
+                            <input
+                              class="input-float__input"
+                              type="email"
+                              name="visitor_email"
+                              required="required"
+                              data-pristine-email-message="Please enter a correct e-mail"
+                              data-pristine-required-message="Please enter your e-mail"
+                            /><span class="input-float__label"
+                              >Your E-mail</span
+                            >
+                          </label>
+                        </div>
+                        <!-- - input #2 -->
+                      </div>
+                      <!-- input #3 -->
+                      <div class="row form__row">
+                        <div class="col form__col">
+                          <label class="input-float">
+                            <textarea
+                              class="input-float__input input-float__input_textarea"
+                              name="visitor_msg"
+                            ></textarea
+                            ><span class="input-float__label"
+                              >Your Message</span
+                            >
+                          </label>
+                        </div>
+                      </div>
+                      <!-- - input #3 -->
+                      <div class="row form__row">
+                        <div class="col form__col text-start">
+                          <label class="input-checkbox input-float">
+                            <input
+                              class="input-checkbox__checkbox"
+                              type="checkbox"
+                              name="terms_agreed"
+                              required="required"
+                              data-pristine-required-message="Your agreement with terms is required."
+                            /><span class="input-checkbox__label"
+                              >I agree to all
+                              <a href="#">Terms and Conditions</a></span
+                            >
+                          </label>
+                        </div>
+                      </div>
+                      <!-- submit -->
+                      <div class="row form__row">
+                        <div class="col form__col form__col_submit text-center">
+                          <button
+                            class="button button_icon button-circle ui-element"
+                            type="submit"
+                            data-arts-cursor-follower-target="{color: 'var(--color-accent-dark-theme)', scale: 'current', magnetic: 0.25}"
+                          >
+                            <span class="button__label button__label-normal"
+                              ><span class="button__title">Submit</span></span
+                            ><span class="button__label button__label-hover"
+                              ><span class="button__title">Submit</span></span
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <!-- - submit -->
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="section-form__marquee pt-header-height">
+                <div
+                  class="marquee-header js-marquee-header"
+                  data-arts-component-name="MarqueeHeader"
+                  data-arts-component-options="{}"
+                  data-arts-os-animation="true"
+                >
+                  <!-- Lane #1 -->
+                  <div class="marquee-header__inner js-marquee-header__wrapper">
+                    <div
+                      class="marquee-header__lane opacity-25 js-marquee-header__list-lane"
+                      data-arts-infinite-list-options="{inverse: false}"
+                      data-arts-os-animation-name="animatedRevealBottom"
+                    >
+                      <div
+                        class="marquee-header__item d-inline-block js-marquee-header__list-item"
+                      >
+                        <h2 class="h3 my-0 js-marquee-header__label">
+                          Get in Touch
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- - Lane #1 -->
+                  <!-- Lane #2 -->
+                  <div class="marquee-header__inner js-marquee-header__wrapper">
+                    <div
+                      class="marquee-header__lane js-marquee-header__list-lane"
+                      data-arts-infinite-list-options="{inverse: true}"
+                      data-arts-os-animation-name="animatedRevealBottom"
+                    >
+                      <div
+                        class="marquee-header__item d-inline-block js-marquee-header__list-item"
+                      >
+                        <div class="h3 my-0 js-marquee-header__label">
+                          Get in Touch
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- - Lane #2 -->
+                  <!-- Lane #3 -->
+                  <div class="marquee-header__inner js-marquee-header__wrapper">
+                    <div
+                      class="marquee-header__lane opacity-25 js-marquee-header__list-lane"
+                      data-arts-infinite-list-options="{inverse: false, speed: 0.5}"
+                      data-arts-os-animation-name="animatedRevealBottom"
+                    >
+                      <div
+                        class="marquee-header__item d-inline-block js-marquee-header__list-item"
+                      >
+                        <div class="h3 my-0 js-marquee-header__label">
+                          Get in Touch
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- - Lane #3 -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- - section CONTACT FORM [fullscreen] -->
+          <!-- - PAGE CONTENT -->
+          <!-- PAGE FOOTER -->
+          <!-- - PAGE FOOTER -->
+        </div>
+      </main>
+      <!-- - PAGE MAIN CONTAINER -->
+      <!-- Cursor Follower -->
+      <div class="arts-cursor" data-arts-cursor-follower="cursor">
+        <div
+          class="arts-cursor__wrapper"
+          data-arts-cursor-follower-element="wrapper"
+        >
+          <!-- follower element-->
+          <div
+            class="arts-cursor__follower"
+            data-arts-cursor-follower-element="follower"
+          ></div>
+          <!-- arrows-->
+          <div class="arts-cursor__arrows">
+            <div
+              class="arts-cursor__arrow arts-cursor__arrow_up material-icons keyboard_arrow_up"
+              data-arts-cursor-follower-element="arrowUp"
+            ></div>
+            <div
+              class="arts-cursor__arrow arts-cursor__arrow_right material-icons keyboard_arrow_right"
+              data-arts-cursor-follower-element="arrowRight"
+            ></div>
+            <div
+              class="arts-cursor__arrow arts-cursor__arrow_down material-icons keyboard_arrow_down"
+              data-arts-cursor-follower-element="arrowDown"
+            ></div>
+            <div
+              class="arts-cursor__arrow arts-cursor__arrow_left material-icons keyboard_arrow_left"
+              data-arts-cursor-follower-element="arrowLeft"
+            ></div>
+          </div>
+          <!-- label holder-->
+          <div class="arts-cursor__wrapper-label">
+            <div
+              class="arts-cursor__label"
+              data-arts-cursor-follower-element="toggleLabel"
+            ></div>
+          </div>
+          <!-- icon holder-->
+          <div class="arts-cursor__wrapper-icon">
+            <div
+              class="arts-cursor__icon"
+              data-arts-cursor-follower-element="toggleClass"
+            ></div>
+          </div>
+          <!-- loading indicator -->
+          <div
+            class="arts-cursor__wrapper-loading"
+            data-arts-cursor-follower-element="loading"
+          >
+            <svg viewBox="25 25 50 50">
+              <circle cx="50" cy="50" r="24" fill="none"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- - Cursor Follower -->
+      <!-- Mobile Loading Spinner -->
+      <svg class="spinner" id="loading-indicator" viewBox="25 25 50 50">
+        <circle cx="50" cy="50" r="24" fill="none"></circle>
+      </svg>
+      <!-- - Mobile Loading Spinner -->
+      <div class="blocking-curtain" id="page-blocking-curtain"></div>
+      <!-- Curtain shape holder-->
+      <svg
+        class="curtain-svg"
+        width="1px"
+        height="1px"
+        viewBox="0 0 1 1"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <clippath id="curtain-clip" clipPathUnits="objectBoundingBox">
+            <path
+              id="curtain-clip__path"
+              d="M0,0 C0.167,0,0.333,0,0.5,0 C0.667,0,0.833,0,1,0 L1,1 L0,1 L0,0"
+            ></path>
+          </clippath>
+        </defs>
+      </svg>
+      <!-- - Curtain shape holder-->
+    </div>
+  </body>
+</html>

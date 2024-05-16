@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Luz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="Luz description" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas></canvas>
+    <!-- PAGE PRELOADER -->
+    <div
+      class="preloader section-fullheight bg-dark-4 text-center"
+      id="js-preloader"
+      data-arts-color-theme="dark"
+      data-arts-component-name="Preloader"
+      data-arts-os-animation="true"
+    >
+      <div class="preloader__wrapper js-preloader__wrapper">
+        <!-- Fast-sliding images -->
+        <div
+          class="preloader__wrapper-images-outer opacity-75 js-preloader__wrapper-images-outer"
+        >
+          <div
+            class="preloader__wrapper-images-inner js-preloader__wrapper-images-inner"
+          ></div>
+        </div>
+        <!-- - Fast-sliding images -->
+        <!-- Heading -->
+        <div
+          class="preloader__heading js-preloader__heading"
+          data-arts-split-text-preset="animatedChars"
+        >
+          <div class="display-xl color-accent">Luz</div>
+        </div>
+        <!-- - Heading -->
+        <!-- Bottom content -->
+        <div
+          class="preloader__footer p-gutters"
+          data-arts-split-text-preset="animatedLines"
+        >
+          <!-- Content [before load] -->
+          <div class="preloader__loading js-preloader__content-loading">
+            <div class="h6">Loading...</div>
+          </div>
+          <!-- - Content [before load] -->
+        </div>
+        <!-- - Bottom content -->
+      </div>
+    </div>
+    <!-- - PAGE PRELOADER -->
+
+    <div data-barba="wrapper">
+      <!-- PAGE HEADER -->
+      <header
+        class="header header_overlay-logo-center-burger-right js-header"
+        id="page-header"
+        data-arts-component-name="Header"
+      >
+        <!-- Top bar -->
+        <div
+          class="header__bar header__bar_fixed borders-auto-opacity-solid d-flex justify-content-between js-header__bar"
+          data-arts-color-theme="light"
+          data-arts-header-logo="primary"
+          data-arts-header-sticky-logo="primary"
+          data-arts-header-sticky-class="bg-light-4"
+        >
+          <!-- Burger button --><a
+            class="header__col header__col_right header__burger js-header__overlay-switcher"
+            href="#"
+            rel="nofollow"
+            data-arts-cursor-follower-target="{delegate: true, magnetic: 0.1, scale: 1.2, hideNative: false}"
+          >
+            <!-- Burger lines -->
+            <div
+              class="header__burger-wrapper-lines"
+              data-arts-cursor-follower-delegated="true"
+            >
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </div>
+            <!-- - Burger lines -->
+            <!-- Border left -->
+            <div
+              class="header__border-vertical bg-bl js-header__border-vertical"
+            ></div
+          ></a>
+          <!-- - Burger button -->
+          <!-- Bar border bottom-->
+          <div
+            class="header__border-horizontal bg-bb js-header__border-horizontal"
+          ></div>
+        </div>
+        <!-- - Top bar -->
+        <!-- Overlay menu -->
+        <div
+          class="header__wrapper-overlay-menu js-header__overlay-container bg-light-4"
+          data-arts-color-theme="light"
+        >
+          <div class="header__overlay-inner js-header__overlay-container-inner">
+            <!-- Site menu -->
+            <div class="col-lg-8 col-12 text-end header__col-overlay">
+              <ul
+                class="menu-overlay"
+                data-arts-component-name="MenuOverlay"
+                data-arts-component-options="{}"
+              >
+                <li class="menu-item-has-children current-menu-ancestor">
+                  <a
+                    class="overlay-menu-item"
+                    href="./index.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Top Page</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">01</span>
+                    </div></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./news.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">News</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">02</span>
+                    </div></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./pastproperty.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Past Property</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">03</span>
+                    </div></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./about.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">About Us</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">04</span>
+                    </div></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    class="overlay-menu-item"
+                    href="./contact.html"
+                    data-arts-split-text-preset="overlayMenuItem"
+                  >
+                    <div class="menu-overlay__heading">Contact</div>
+                    <div class="menu-overlay__counter ui-element">
+                      <span class="strong">05</span>
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- - Site menu -->
+            <!-- Widgets -->
+            <div class="col-lg-4 col-12 text-start header__col-widgets">
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">E-mail</div>
+                <div class="header__widget-content h6">
+                  <a href="mailto:info@luz-real.com">info@luz-real.com</a>
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">Phones</div>
+                <div class="header__widget-content h6">
+                  Tel:03-6432-5307<br />Fax:03-6432-5308
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+              <!-- widget TEXT -->
+              <div class="header__widget js-header__overlay-widget">
+                <div class="header__widget-title subheading">Address</div>
+                <div class="header__widget-content h6">
+                  Grand M Ebisu<br />
+                  4-19-17 Ebisu,<br />
+                  Shibuya-ku, Tokyo-to 150-0013<br />
+                  Japan
+                </div>
+              </div>
+              <!-- - widget TEXT -->
+            </div>
+            <!-- - Widgets -->
+          </div>
+        </div>
+        <!-- - Overlay menu -->
+      </header>
+      <!-- - PAGE HEADER -->
+      <!-- PAGE MAIN CONTAINER -->
+      <main class="page-wrapper" id="page-wrapper" data-barba="container">
+        <div class="page-wrapper__content" id="page-wrapper__content">
+          <!-- PAGE CONTENT -->
+          <!-- Masthead -->
+          <div
+            class="masthead pt-header-height js-masthead"
+            data-arts-component-name="Masthead"
+            data-arts-os-animation="true"
+          >
+            <!-- Marquee header -->
+            <div
+              class="marquee-header overflow-hidden py-2 js-marquee-header"
+              data-arts-component-name="MarqueeHeader"
+              data-arts-component-options='{delimiter: "&amp;nbsp;&amp;nbsp;/&amp;nbsp;&amp;nbsp;"}'
+              data-arts-os-animation="true"
+            >
+              <div class="marquee-header__inner js-marquee-header__wrapper">
+                <div class="overflow-hidden">
+                  <div
+                    class="marquee-header__lane js-marquee-header__list-lane"
+                    data-arts-os-animation-name="animatedReveal"
+                  >
+                    <div
+                      class="marquee-header__item d-inline-block js-marquee-header__list-item"
+                    >
+                      <h1 class="h1 my-0 js-marquee-header__label">News</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- - Marquee header -->
+            <div
+              class="w-100 bb-auto-opacity-solid"
+              data-arts-os-animation-name="animatedBorderHorizontal"
+            ></div>
+          </div>
+          <!-- - Masthead -->
+          <!-- section BLOG POSTS [list view] -->
+          <section
+            class="section section-blog py-medium container-fluid-gutters"
+            data-arts-component-name="Content"
+            data-arts-os-animation="true"
+          >
+            <!-- Posts list -->
+            <div class="section-blog__posts">
+              <div
+                class="w-100 bt-opacity"
+                data-arts-os-animation-name="animatedBorderHorizontal"
+              ></div>
+              <div
+                class="post row align-items-start py-xsmall"
+                data-hover-group-class="hover-zoom-hovered"
+                data-arts-os-animation-name="animatedJumpScale"
+              >
+                <!-- Date -->
+                <div class="col-12 col-lg-3 order-lg-0 mb-3">
+                  <div class="content-width-1">
+                    <div class="h6 my-0">
+                      (&nbsp;&nbsp;June 1, 2024&nbsp;&nbsp;)
+                    </div>
+                  </div>
+                </div>
+                <!-- - Date -->
+                <!-- Heading & info -->
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 order-lg-2">
+                  <div class="content-width-3">
+                    <h2 class="h4 my-0 transition-color">
+                      NewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNews
+                    </h2>
+                  </div>
+                </div>
+                <!-- - Heading & info -->
+              </div>
+              <div
+                class="w-100 bt-opacity"
+                data-arts-os-animation-name="animatedBorderHorizontal"
+              ></div>
+              <div
+                class="post row align-items-start py-xsmall"
+                data-hover-group-class="hover-zoom-hovered"
+                data-arts-os-animation-name="animatedJumpScale"
+              >
+                <!-- Date -->
+                <div class="col-12 col-lg-3 order-lg-0 mb-3">
+                  <div class="content-width-1">
+                    <div class="h6 my-0">
+                      (&nbsp;&nbsp;June 1, 2024&nbsp;&nbsp;)
+                    </div>
+                  </div>
+                </div>
+                <!-- - Date -->
+                <!-- Heading & info -->
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 order-lg-2">
+                  <div class="content-width-3">
+                    <h2 class="h4 my-0 transition-color">
+                      NewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNews
+                    </h2>
+                  </div>
+                </div>
+                <!-- - Heading & info -->
+              </div>
+              <div
+                class="w-100 bt-opacity"
+                data-arts-os-animation-name="animatedBorderHorizontal"
+              ></div>
+              <div
+                class="post row align-items-start py-xsmall"
+                data-hover-group-class="hover-zoom-hovered"
+                data-arts-os-animation-name="animatedJumpScale"
+              >
+                <!-- Date -->
+                <div class="col-12 col-lg-3 order-lg-0 mb-3">
+                  <div class="content-width-1">
+                    <div class="h6 my-0">
+                      (&nbsp;&nbsp;June 1, 2024&nbsp;&nbsp;)
+                    </div>
+                  </div>
+                </div>
+                <!-- - Date -->
+                <!-- Heading & info -->
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 order-lg-2">
+                  <div class="content-width-3">
+                    <h2 class="h4 my-0 transition-color">
+                      NewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNews
+                    </h2>
+                  </div>
+                </div>
+                <!-- - Heading & info -->
+              </div>
+              <div
+                class="w-100 bt-opacity"
+                data-arts-os-animation-name="animatedBorderHorizontal"
+              ></div>
+              <div
+                class="post row align-items-start py-xsmall"
+                data-hover-group-class="hover-zoom-hovered"
+                data-arts-os-animation-name="animatedJumpScale"
+              >
+                <!-- Date -->
+                <div class="col-12 col-lg-3 order-lg-0 mb-3">
+                  <div class="content-width-1">
+                    <div class="h6 my-0">
+                      (&nbsp;&nbsp;June 1, 2024&nbsp;&nbsp;)
+                    </div>
+                  </div>
+                </div>
+                <!-- - Date -->
+                <!-- Heading & info -->
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 order-lg-2">
+                  <div class="content-width-3">
+                    <h2 class="h4 my-0 transition-color">
+                      NewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNews
+                    </h2>
+                  </div>
+                </div>
+                <!-- - Heading & info -->
+              </div>
+              <div
+                class="w-100 bt-opacity"
+                data-arts-os-animation-name="animatedBorderHorizontal"
+              ></div>
+              <div
+                class="post row align-items-start pt-xsmall"
+                data-hover-group-class="hover-zoom-hovered"
+                data-arts-os-animation-name="animatedJumpScale"
+              >
+                <!-- Date -->
+                <div class="col-12 col-lg-3 order-lg-0 mb-3">
+                  <div class="content-width-1">
+                    <div class="h6 my-0">
+                      (&nbsp;&nbsp;June 1, 2024&nbsp;&nbsp;)
+                    </div>
+                  </div>
+                </div>
+                <!-- - Date -->
+                <!-- Heading & info -->
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 order-lg-2">
+                  <div class="content-width-3">
+                    <h2 class="h4 my-0 transition-color">
+                      NewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNewsNews
+                    </h2>
+                  </div>
+                </div>
+                <!-- - Heading & info -->
+              </div>
+            </div>
+            <!-- - Posts list -->
+          </section>
+          <!-- - section BLOG POSTS [list view] -->
+          <!-- - PAGE CONTENT -->
+          <!-- PAGE FOOTER -->
+          <footer class="footer borders-auto-opacity-solid" id="page-footer">
+            <div class="footer__area bt-auto">
+              <section class="widget widget_asli_marquee">
+                <a
+                  class="d-block text-center overflow-hidden py-xsmall js-marquee-header"
+                  href="./contact.html"
+                  data-arts-component-name="MarqueeHeader"
+                  data-arts-component-options='{delimiter: "&amp;nbsp;&amp;nbsp;/&amp;nbsp;&amp;nbsp;"}'
+                  data-arts-cursor-follower-target="{hideNative: true, scale: '100px', className: 'material-icons north_east', color: '#000', background: 'var(--color-accent-dark-theme)'}"
+                >
+                  <div class="marquee-header__inner js-marquee-header__wrapper">
+                    <div class="h6 d-block color-accent mb-3 mb-lg-4">
+                      Ready?
+                    </div>
+                    <div
+                      class="marquee-header__lane js-marquee-header__list-lane"
+                    >
+                      <div
+                        class="marquee-header__item d-inline-block js-marquee-header__list-item"
+                      >
+                        <div class="h3 my-0 js-marquee-header__label">
+                          Get in Touch
+                        </div>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </section>
+            </div>
+            <div class="footer__area bt-auto">
+              <div class="container-fluid-gutters">
+                <div class="row align-items-start footer__row-pb-medium">
+                  <div
+                    class="col-12 col-lg-3 col-md-6 footer__column-pt-medium"
+                  >
+                    <section class="widget widget_text">
+                      <h2 class="widget__title h6 strong">Office</h2>
+                      <div class="textwidget">
+                        <p>
+                          Grand M Ebisu<br />
+                          4-19-17 Ebisu,<br />
+                          Shibuya-ku, Tokyo-to 150-0013<br />
+                          Japan
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                  <div
+                    class="col-12 col-lg-3 col-md-6 footer__column-pt-medium"
+                  >
+                    <section class="widget widget_text">
+                      <h2 class="widget__title h6 strong">Phones</h2>
+                      <div class="textwidget">
+                        <p>Tel:03-6432-5307<br />Fax:03-6432-5308</p>
+                      </div>
+                    </section>
+                  </div>
+                  <div
+                    class="col-12 col-lg-3 col-md-6 footer__column-pt-medium"
+                  >
+                    <section class="widget widget_nav_menu">
+                      <h2 class="widget__title h6 strong">Links</h2>
+                      <div>
+                        <ul class="menu-column">
+                          <li class="menu-item">
+                            <a href="./index.html">Top Page</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./about.html">About Us</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./news.html">News</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./pastproperty.html">Past Property</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./contact.html">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__area bt-auto">
+              <div class="container-fluid-gutters">
+                <div class="row align-items-center footer__row-pb-small">
+                  <div
+                    class="col-12 col-md-3 order-md-3 footer__column-pt-small text-md-end text-center"
+                  ></div>
+                  <div
+                    class="col-12 col-md-3 order-md-1 footer__column-pt-small text-md-start text-center"
+                  >
+                    <section class="widget widget_asli_inline_links">
+                      <div>
+                        <ul class="inline-links">
+                          <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- - PAGE FOOTER -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
